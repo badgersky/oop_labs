@@ -6,4 +6,4 @@ class Currency:
         self.rate = rate
 
     def __str__(self):
-        return f"Currency: {self.name}, code: {self.code}, rate: {self.rate}"
+        return f'Currency: {self.name}, code: {self.code}, rate: {self.rate}'
