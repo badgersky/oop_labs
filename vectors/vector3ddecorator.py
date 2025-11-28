@@ -7,11 +7,12 @@ class Vector3DDecorator(Vector2D):
         self._z = z
 
     def abs(self) -> float:
-        x, y, z = self.get_components_3d()
+        x, y, z = self.get_components()
         return (x**2 + y**2 + z**2)**0.5
-
+    
     def get_components(self) -> tuple[float, float, float]:
-        return (self.get_x(), self.get_y(), self._z)
+        x, y = self._base.get_components()
+        return (x, y, self._z)
 
     def cdot(self, other: 'Vector3DDecorator') -> float:
         x1, y1, z1 = self.get_components()
