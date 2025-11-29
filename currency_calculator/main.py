@@ -8,4 +8,4 @@ if __name__ == '__main__':
     amount = 1000
     code1, code2 = 'USD', 'EUR'
     res = c.convert(code1, code2, amount)
-    print(f'{amount} {code1} = {res} {code2}')
+    print(f'{amount} {code1} = {res:.2f} {code2}')
