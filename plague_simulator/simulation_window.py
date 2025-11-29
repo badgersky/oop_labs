@@ -5,8 +5,8 @@ H = 1000
 
 class Simulation:
 
-    def __init__(self, root):
+    def __init__(self, root, name='katar'):
         self.root = root
-        self.root.title("Symulacja choroby bardzo groźnej")
-        self.canvas = tk.Canvas(root, width=W, height=H, bg="white")
+        self.root.title(name)
+        self.canvas = tk.Canvas(root, width=W, height=H, bg='white')
         self.canvas.pack()
